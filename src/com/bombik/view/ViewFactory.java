@@ -1,10 +1,7 @@
 package com.bombik.view;
 
 import com.bombik.EmailManager;
-import com.bombik.controller.BaseController;
-import com.bombik.controller.LoginWindowController;
-import com.bombik.controller.MainWindowController;
-import com.bombik.controller.OptionsWindowController;
+import com.bombik.controller.*;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -70,6 +67,14 @@ public class ViewFactory {
         BaseController controller = new OptionsWindowController(emailManager, this,"OptionsWindow.fxml");
         initializeStage(controller);
     }
+
+    public void showComposeMessageWindow(){
+        System.out.println("compose message window called");
+
+        BaseController controller = new ComposeMessageController(emailManager, this,"ComposeMessageWindow.fxml");
+        initializeStage(controller);
+    }
+
 
     private void initializeStage(BaseController baseController){
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(baseController.getFxmlName()));

@@ -8,6 +8,12 @@ public class EmailAccount {
     private String address;
     private String password;
     private Properties properties;
+
+    @Override
+    public String toString() {
+        return address;
+    }
+
     private Store store;
 
     public String getAddress() {
