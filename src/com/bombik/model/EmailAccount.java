@@ -1,5 +1,6 @@
 package com.bombik.model;
 
+import javax.mail.Session;
 import javax.mail.Store;
 import java.util.Properties;
 
@@ -7,8 +8,22 @@ public class EmailAccount {
 
     private String address;
     private String password;
-    private Properties properties;
     private Store store;
+    private Properties properties;
+    private Session session;
+
+    public Session getSession() {
+        return session;
+    }
+
+    public void setSession(Session session) {
+        this.session = session;
+    }
+
+    @Override
+    public String toString() {
+        return address;
+    }
 
     public String getAddress() {
         return address;

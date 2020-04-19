@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0df9e9c-a474-498a-84c2-d9a9f1a8cfaf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bombik/EmailManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bombik/EmailManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bombik/controller/MainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bombik/controller/MainWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaFxEmailClientCourse/com/bombik/controller/ComposeMessageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFxEmailClientCourse/com/bombik/controller/ComposeMessageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaFxEmailClientCourse/com/bombik/model/EmailAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaFxEmailClientCourse/com/bombik/model/EmailAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bombik/controller/services/EmailSenderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bombik/controller/services/EmailSenderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bombik/controller/services/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bombik/controller/services/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bombik/model/EmailAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bombik/model/EmailAccount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,10 +82,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="3011" y="211" key="#com.intellij.ide.util.MemberChooser" timestamp="1587308134412">
+    <state x="3011" y="211" key="#com.intellij.ide.util.MemberChooser" timestamp="1587318556739">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="3011" y="211" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1587308134412" />
+    <state x="3011" y="211" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1587318556739" />
     <state x="2610" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586799865836">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -92,22 +94,22 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2586" y="261" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1587025204917" />
-    <state width="1877" height="257" key="GridCell.Tab.0.bottom" timestamp="1587310558129">
+    <state width="1877" height="257" key="GridCell.Tab.0.bottom" timestamp="1587319749313">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1587310558129" />
-    <state width="1877" height="257" key="GridCell.Tab.0.center" timestamp="1587310558129">
+    <state width="1877" height="257" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1587319749313" />
+    <state width="1877" height="257" key="GridCell.Tab.0.center" timestamp="1587319749313">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1587310558129" />
-    <state width="1877" height="257" key="GridCell.Tab.0.left" timestamp="1587310558129">
+    <state width="1877" height="257" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1587319749313" />
+    <state width="1877" height="257" key="GridCell.Tab.0.left" timestamp="1587319749312">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1587310558129" />
-    <state width="1877" height="257" key="GridCell.Tab.0.right" timestamp="1587310558129">
+    <state width="1877" height="257" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1587319749312" />
+    <state width="1877" height="257" key="GridCell.Tab.0.right" timestamp="1587319749313">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="257" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1587310558129" />
+    <state width="1877" height="257" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1587319749313" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1587226921099">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -156,10 +158,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2622" y="139" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1586939106687" />
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587292787996">
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587318664768">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1587292787996" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1587318664768" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/JavaFxEmailClientCourse$Launcher.ic" NAME="Launcher Coverage Results" MODIFIED="1586847875986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
