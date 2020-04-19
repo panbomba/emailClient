@@ -8,10 +8,7 @@ import com.bombik.model.SizeInteger;
 import com.bombik.view.ViewFactory;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableRow;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TreeView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.web.WebView;
 import javafx.util.Callback;
@@ -21,6 +18,9 @@ import java.util.Date;
 import java.util.ResourceBundle;
 
 public class MainWindowController extends BaseController implements Initializable {
+
+    private MenuItem markUnredMenuItem = new MenuItem("mark as unred");
+    private MenuItem deleteMessageMenuItem = new MenuItem("delete message");
 
     @FXML
     private TreeView<String> emailsTreeView;
@@ -72,6 +72,17 @@ public class MainWindowController extends BaseController implements Initializabl
         setUpBoldRows();
         setUpMessageRenderService();
         setUpMessageSelection();
+        setUpContextMenus();
+    }
+
+    private void setUpContextMenus() {
+        markUnredMenuItem.setOnAction(event -> {
+            emailManager.setUnRead();
+        });
+        deleteMessageMenuItem.setOnAction(event -> {
+            emailManager.deleteSelectedMessage();
+            emailWebView.getEngine().loadContent("");
+        });
     }
 
     private void setUpMessageSelection() {
@@ -130,6 +141,8 @@ public class MainWindowController extends BaseController implements Initializabl
         recipientCol.setCellValueFactory((new PropertyValueFactory<EmailMessage, String>("recipient")));
         sizeCol.setCellValueFactory((new PropertyValueFactory<EmailMessage, SizeInteger>("size")));
         dateCol.setCellValueFactory((new PropertyValueFactory<EmailMessage, Date>("date")));
+
+        emailsTableView.setContextMenu(new ContextMenu(markUnredMenuItem, deleteMessageMenuItem));
     }
 
     private void setUpEmailsTreeView() {
